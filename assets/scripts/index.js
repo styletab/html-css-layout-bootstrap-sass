@@ -5,3 +5,14 @@
 
 // use require without a reference to ensure a file is bundled
 require('./example');
+
+$('#sign-in').on('click', function () {
+  $('#signInModal').modal('show');
+
+});
+
+$(document).on('ready', function(){
+$('#sign-out').hide();
+$('#change-pw').hide();
+$('#signInModal').modal('show');
+});
